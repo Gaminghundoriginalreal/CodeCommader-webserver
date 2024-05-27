@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCommander Dashboard</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://codecommander.gaminghund.de">
+            <img src="favicon.ico" alt="CodeCommander Logo" class="logo">
+        </a>
+        <h1>CodeCommander Dashboard</h1>
+    </header>
+    <main>
+        <section class="join-section">
+            <h2>Invite CodeCommander to your server</h2>
+            <button class="invite-button">Invite Bot</button>
+        </section>
+        <section class="future-plans">
+            <h2>Upcoming Features</h2>
+            <p>Everything will be better and nicer within the next 5 months!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CodeCommander. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.invite-button').addEventListener('click', () => {
+            window.location.href = 'https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot';
+        });
+    </script>
+</body>
+</html>
